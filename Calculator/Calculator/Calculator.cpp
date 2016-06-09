@@ -12,7 +12,7 @@ int main()
 	int result, rightValue, leftValue = 0;
 	char op;
 	std::cout << "Enter an expression  ('+' and '-' supported)" << std::endl;
-	std::cin >> leftValue >> op >> rightValue;             //Read input like 1 + #
+	std::cin >> leftValue >> op >> rightValue;             //Read input like 1 + 3
 	std::cin.get();
 
 	{                                                      //Calculation
