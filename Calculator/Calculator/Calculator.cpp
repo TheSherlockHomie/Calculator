@@ -11,7 +11,7 @@ int main()
 {
 	int result, rightValue, leftValue = 0;
 	char op;
-	std::cout << "Enter an expression  ('+' and '-' supported)" << std::endl;
+	std::cout << "Enter an expression  ('+' , '-' , '*' and '/' supported)" << std::endl;
 	std::cin >> leftValue >> op >> rightValue;             //Read input like 1 + 3
 	std::cin.get();
 
@@ -20,6 +20,13 @@ int main()
 			result = leftValue + rightValue;
 		else if (op == '-')
 			result = leftValue - rightValue;
+		else if (op == '*')
+			result = leftValue * rightValue;
+		else if (op == '/')
+			if(rightValue == 0)
+				std::cerr << "Divisor can't be 0!" << std::endl;
+			else
+			result = leftValue / rightValue;				
 		else
 		{
 			std::cerr << "Invalid Operator!" << std::endl;
